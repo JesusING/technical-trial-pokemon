@@ -17,6 +17,7 @@ const Layout = () => {
           color="inherit"
           aria-label="menu"
           sx={{ mr: 2 }}
+          onClick={() => navigate(ROUTES.home)}
         >
           <img width={250} height={100} src="src/assets/International_pokemon_logo.svg.png" alt="pokemon-logo"></img>
         </IconButton>

@@ -5,7 +5,7 @@ import HomeView from "./ui/pages/home/home";
 import { ROUTES } from "./app-config/routes";
 import { Container } from "./app-config/container/container";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FavouriteView from "./ui/pages/favorite-pokemon";
+import FavouriteView from "./ui/pages/favorite-pokemon/favorite-pokemon";
 
 function App(props: { layout: React.ReactElement }) {
   const { layout } = props;

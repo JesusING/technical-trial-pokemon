@@ -11,7 +11,7 @@ const PokemonCard = (props: { pokemon: IPokemonPreview; isFavorite: boolean; onH
   return (
     <Card key={pokemon.name} id={"id-card-" + pokemon.name} title={pokemon.name}>
       <div style={{display: "flex", justifyContent: "space-between",marginRight: 10}}>
-        <Typography color={COLORS.secondary} variant="body1" onClick={() => goToDetail()}>{"Click for more details..."}</Typography>
+        <Typography color={COLORS.secondary} sx={{cursor:"pointer"}} variant="body1" onClick={() => goToDetail()}>{"Click here for more details..."}</Typography>
         {isFavorite ? (
           <FavoriteIcon sx={{cursor: "pointer"}} onClick={() => onHandleFavorite()} />
         ) : (
